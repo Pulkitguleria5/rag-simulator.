@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Allocation Graph Simulator</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-center p-5">
+    <h1 class="text-3xl font-bold mb-5">Resource Allocation Graph (RAG) Simulator</h1>
+    <div class="flex flex-wrap justify-center gap-4 mb-5">
+        <button id="add-process" class="px-4 py-2 bg-blue-500 text-white rounded-lg">Add Process</button>
+        <button id="add-resource" class="px-4 py-2 bg-green-500 text-white rounded-lg">Add Resource</button>
+        <input type="text" id="source-node" placeholder="Source Node" class="border p-2 rounded-md">
+        <input type="text" id="target-node" placeholder="Target Node" class="border p-2 rounded-md">
+        <button id="add-edge" class="px-4 py-2 bg-purple-500 text-white rounded-lg">Add Edge</button>
+        <button id="remove-edge" class="px-4 py-2 bg-red-500 text-white rounded-lg">Remove Edge</button>
+        <button id="detect-deadlock" class="px-4 py-2 bg-yellow-500 text-white rounded-lg">Detect Deadlock</button>
+        <button id="reset" class="px-4 py-2 bg-gray-500 text-white rounded-lg">Reset</button>
+    </div>
+    <div id="graph" class="w-full h-[600px] border border-gray-300 bg-white"></div>
+    <script src="rag.js"></script>
+</body>
+</html>
